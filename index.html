@@ -1,0 +1,165 @@
+<!DOCTYPE html>   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarantino Theaters - Book Tickets</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="assets/logos/Tarantino Theaters Logo.ico" type="image/x-icon">
+    
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logos/Tarantino Theaters Logo.png" alt="Tarantino Theaters Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movies.html" id="movies-btn">Movies</a>
+            <a href="schedules.html" id="schedules-btn">Schedules</a>
+            <a id="user-nav" href="login.html" class="sign-in">Sign In</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="assets/images/movie1.jpg" data-size="portrait" alt="Movie 1">
+                    <div class="movie-info">
+                        <h1>Interstellar</h1>
+                        <button class="btn-buy hero-buy" data-movie="Movie 1">Book Now</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/movie2.jpg" data-size="square" alt="Movie 2">
+                    <div class="movie-info">  <!-- ✅ Added here for consistency -->
+                        <h1>Rockstar</h1>
+                        <button class="btn-buy hero-buy" data-movie="Movie 2">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <!-- MOVIE SELECTION DROPDOWN -->
+    <section class="movie-selection">
+        <select id="select-cinema">
+            <option value="" disabled selected>Select Cinema</option>
+            <option value="kalanki">Kalanki Branch</option>
+            <option value="baneshwor">Baneshwor Branch</option>
+            <option value="lazimpat">Lazimpat Branch</option>
+        </select>
+
+        <select id="select-movie" disabled>
+            <option value="" disabled selected>Select Movie</option>
+            <option value="movie1">Interstellar</option>
+            <option value="movie2">Rockstar</option>
+            <option value="movie3">Django Unchained</option>
+            <option value="movie4">Shambhala</option>
+            <option value="movie5">Deadpool 2</option>
+        </select>
+
+        <select id="select-date" disabled>
+            <option value="" disabled selected>Select Date</option>
+            <option value="feb6">Feb 6</option>
+            <option value="feb7">Feb 7</option>
+            <option value="feb8">Feb 8</option>
+        </select>
+
+        <select id="select-time" disabled>
+            <option value="" disabled selected>Select Time</option>
+            <option value="8am">8:00 AM</option>
+            <option value="12pm">12:00 PM</option>
+            <option value="4pm">4:00 PM</option>
+            <option value="8pm">8:45 PM</option>
+        </select>
+
+        <button id="buy-now" disabled>Buy Now</button>
+    </section>
+
+    <!-- NOW SHOWING & COMING SOON SECTION -->
+    <section class="movie-display">
+        <div class="movie-tabs">
+            <button class="tab-btn active" data-category="now-showing">🎬 Now Showing</button>
+            <button class="tab-btn" data-category="coming-soon">⏳ Coming Soon</button>
+        </div>
+
+        <div class="movies-container">
+            <div class="movies-list now-showing">
+                <div class="movie-card">
+                    <img src="assets/images/movie1.jpg" alt="Movie 1">
+                    <h4>Interstellar</h4>
+                    <p>Sci-Fi | Thriller</p>
+                    <button class="btn-buy now-showing-buy" data-movie="Movie 1">Buy Now</button>
+                </div>
+                <div class="movie-card ">
+                    <img src="assets/images/movie2.jpg" alt="Movie 2">
+                    <h4>Rockstar</h4>
+                    <p>Melodrama | Romance</p>
+                    <button class="btn-buy now-showing-buy" data-movie="Movie 2">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="movies-list coming-soon hidden">
+                <div class="movie-card">
+                    <img src="assets/images/movie3.jpg" alt="Movie 3">
+                    <h4>Django Unchained</h4>
+                    <p>Action | Western</p>
+                    <button class="btn-buy coming-soon-buy" data-movie="Movie 3">Advance Buy Now</button>
+                </div>
+                <div class="movie-card">
+                    <img src="assets/images/movie4.jpg" alt="Movie 4">
+                    <h4>Shambhala</h4>
+                    <p>Drama | Adventure</p>
+<button class="btn-more more-info" data-movie="Movie 4">More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer> 
+        <div class="footer-content">
+            <div class="about">
+                <h3>About Us</h3>
+                <p id="about-short">
+                    Welcome to Tarantino Theaters, Nepal’s premier cinema experience! Immerse yourself in world-class visuals and sound for an unforgettable journey.🎥✨
+                </p>
+                <p id="about-full" class="hidden">
+                    Located in the heart of Nepal, Tarantino Theaters brings the magic of storytelling to life, inspired by the legendary Quentin Tarantino. Whether you're here for action, romance, or thrillers, every visit feels like a masterpiece. Sit back, grab your popcorn, and let the reel magic begin! 🍿🎬
+                </p>
+                <button id="read-more" class="btn-read-more">Read More</button>
+            </div>
+            
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@tarantinotheaters.com.np</p>
+                <p>Phone: +977-9861755247</p>
+            </div>
+    
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+    
+            <!-- Link to the Legal Page with Anchors -->
+            <div class="legal">
+                <a href="legal.html#terms">Terms & Conditions</a> |
+                <a href="legal.html#privacy">Privacy Policy</a>
+            </div>
+        </div>
+        <p>&copy; 2025 Tarantino Theaters. All Rights Reserved.</p>
+    </footer>
+    

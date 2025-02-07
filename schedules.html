@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedules - Tarantino Theaters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logos/Tarantino Theaters Logo.png" alt="Tarantino Theaters Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="#" class="active">Schedules</a>
+            <a href="login.html" class="sign-in">Sign In</a>
+        </nav>
+    </header>
+
+    <!-- Movie Schedules Section -->
+    <section class="schedule-container">
+        <h2>Movie Schedules</h2>
+
+        <!-- Filters -->
+        <div class="filters">
+            <button id="this-week-btn" class="filter-btn active" data-week="this-week">This Week</button>
+            <button id="next-week-btn" class="filter-btn" data-week="next-week">Next Week</button>
+
+            <select id="language-select">
+                <option value="all">All Languages</option>
+                <option value="en">English</option>
+                <option value="hin">Hindi</option>
+            </select>
+
+            <select id="cinema-select">
+                <option value="all">All Cinemas</option>
+                <option value="baneshwor">Baneshwor Branch</option>
+                <option value="kalanki">Kalanki Branch</option>
+            </select>
+        </div>
+
+        <!-- Movie Listings -->
+        <div id="schedule-list">
+            <!-- BADASS RAVI KUMAR (Hindi Movie) -->
+            <div class="movie-schedule this-week" data-language="hin" data-cinema="baneshwor">
+                <h3>BADASS RAVI KUMAR</h3>
+                <p>Showing at: <strong>BANESHWOR</strong></p>
+                <p>Language: <strong>HINDI</strong></p>
+                <p>Date: <strong>FEB 7</strong></p>
+                <div class="time-slots">
+                    <div class="time-slot" data-movie="Badass Ravi Kumar" data-time="08:00 AM">08:00 AM</div>
+                    <div class="time-slot" data-movie="Badass Ravi Kumar" data-time="03:00 PM">03:00 PM</div>
+                    <div class="time-slot" data-movie="Badass Ravi Kumar" data-time="06:30 PM">06:30 PM</div>
+                </div>
+            </div>
+
+            <!-- DEADPOOL 2 (English Movie) -->
+            <div class="movie-schedule this-week" data-language="en" data-cinema="kalanki">
+                <h3>DEADPOOL 2</h3>
+                <p>Showing at: <strong>KALANKI</strong></p>
+                <p>Language: <strong>ENGLISH</strong></p>
+                <p>Date: <strong>FEB 8</strong></p>
+                <div class="time-slots">
+                    <div class="time-slot" data-movie="Deadpool 2" data-time="10:00 AM">10:00 AM</div>
+                    <div class="time-slot" data-movie="Deadpool 2" data-time="05:00 PM">05:00 PM</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Tarantino Theaters. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

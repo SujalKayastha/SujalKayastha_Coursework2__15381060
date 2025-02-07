@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - Tarantino Theaters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logos/Tarantino Theaters Logo.png" alt="Tarantino Theaters Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="schedules.html">Schedules</a>
+            <a href="login.html" class="sign-in">Sign In</a>
+        </nav>
+    </header>
+
+    <!-- MOVIES SECTION -->
+    <section class="movies-container">
+        <h2>Now Showing & Coming Soon</h2>
+
+        <div class="movies-list">
+            <!-- Movie 1 -->
+            <div class="movie-card">
+                <img src="assets/images/movie1.jpg" alt="Interstellar">
+                <h3>Interstellar</h3>
+                <p>Sci-Fi | Thriller</p>
+                <button class="btn-buy" onclick="window.location.href='seat-selection.html?movie=Interstellar'">Buy Now</button>
+            </div>
+
+            <!-- Movie 2 -->
+            <div class="movie-card">
+                <img src="assets/images/movie2.jpg" alt="Rockstar">
+                <h3>Rockstar</h3>
+                <p>Melodrama | Romance</p>
+                <button class="btn-buy" onclick="window.location.href='seat-selection.html?movie=Rockstar'">Buy Now</button>
+            </div>
+
+            <!-- Movie 3 -->
+            <div class="movie-card">
+                <img src="assets/images/movie3.jpg" alt="Django Unchained">
+                <h3>Django Unchained</h3>
+                <p>Action | Western</p>
+                <button class="btn-buy" onclick="window.location.href='seat-selection.html?movie=Django Unchained'">Buy Now</button>
+            </div>
+
+            <!-- Movie 4 -->
+            <div class="movie-card">
+                <img src="assets/images/movie4.jpg" alt="Shambhala">
+                <h3>Shambhala</h3>
+                <p>Drama | Adventure</p>
+                <button class="btn-buy" onclick="window.location.href='seat-selection.html?movie=Shambhala'">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Tarantino Theaters. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
